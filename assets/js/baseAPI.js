@@ -4,7 +4,6 @@
 $.ajaxPrefilter(function(options) {
     // 在发起请求之前，统一拼接请求的根路径
     options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
-    console.log(options.url);
 
     // 统一为有权限的接口，设置headers请求头
     // 用indexOf查找指定子字符串，无则返回-1
